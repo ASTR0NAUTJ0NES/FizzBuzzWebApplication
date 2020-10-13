@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<form asp-action="Solve">
+    <div class="row">
+        <div class="col">
+            <input type="text" name="fizz" />
+        </div>
+        <div class="col">
+            <input type="text" name="buzz" />
+        </div>
+        <div class="col">
+            <button type="submit" class="btn btn-black">Submit</button>
+        </div>
+    </div>
+</form>
+
+<div class="row">
+    <div class="col">
+        <h2>Results:</h2>
+        <p>
+            @Html.Raw(ViewData["Output"])
+        </p>
+    </div>
+</div>
+
